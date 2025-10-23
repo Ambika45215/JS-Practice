@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="flex justify-center items-center flex-col min-h-screen bg-gray-100">
+    <header class="m-5 text-3xl font-semibold">
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form action=""
+            class="border-2 border-white w-100 h-150 flex flex-col justify-center pl-5 py-3 pr-8 gap-2 bg-white rounded-xl">
+            <label for="FirstName">First Name: <br>
+                <input type="text" id="FirstName" required placeholder="First Name (min 3 letters)"
+                    class="border-2 rounded-lg w-full h-10 mt-2 p-2">
+                <div class="error text-red-600 text-sm h-1 mb-2"></div>
+            </label>
+            <label for="LastName">Last Name: <br>
+                <input type="text" id="LastName" required placeholder="Last Name (min 3 letters)"
+                    class="border-2 rounded-lg w-full h-10 mt-2 p-2">
+                <div class="error text-red-600 text-sm h-1 mb-2"></div>
+            </label>
+            <label for="mail">E-mail: <br>
+                <input type="email" id="mail" required placeholder="abcd@domain.com"
+                    class="border-2 rounded-lg w-full h-10 mt-2 p-2">
+                <div class="error text-red-600 text-sm h-1 mb-2"></div>
+            </label>
+            <label for="psw">Password: <br>
+                <input type="password" id="psw" required placeholder="Enter password"
+                    class="border-2 rounded-lg w-full h-10 mt-2 p-2">
+                <div class="error text-red-600 text-sm h-1 mb-2"></div>
+            </label>
+            <label for="cpsw">Confirm Password: <br>
+                <input type="password" id="cpsw" required placeholder="Confirm password"
+                    class="border-2 rounded-lg w-full h-10 mt-2 p-2">
+                <div class="error text-red-600 text-sm h-1 mb-2"></div>
+            </label>
+
+            <button type="button" id="myForm"
+                class="w-full h-10 border-2 border-green-600 bg-green-600 rounded-lg mb-2 mt-2 font-semibold hover:bg-green-400 hover:border-green-400 cursor-pointer">Register</button>
+            <div class="content-center m-auto">Don't have an account ? <a href="./Login.html"
+                    class="text-blue-600 hover:underline">Login here</a></div>
+        </form>
+
+    </main>
+
+    <script src="./register_form.js"></script>
+</body>
+
+</html>
