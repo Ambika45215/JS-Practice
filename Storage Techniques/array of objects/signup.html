@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="overflow-hidden">
+    <a href="./login.html" class="block text-end mr-15 mt-2 hover:text-blue-400 hover:underline">Login</a>
+    <main class="w-screen h-screen flex justify-center items-center">
+        <form action="">
+            <section class="border-2 pl-10 pr-15 py-5 rounded-3xl w-100">
+                <p class="text-3xl font-semibold text-center">Sign Up</p>
+                <label for="firstName">First Name:
+                    <input type="text" id="firstName" placeholder="First Name" class="border-2 block w-75 my-2 p-2">
+                </label>
+                <label for="lastName">Last Name:
+                    <input type="text" id="lastName" placeholder="Last Name" class="border-2 block w-75 my-2 p-2">
+                </label>
+                <label for="gender">Gender:
+                    <select name="gender" id="gender" class="block border-2 my-2 p-2">
+                        <option value="">--Select--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </label>
+                <label for="mail">E-mail:
+                    <input type="email" id="mail" placeholder="Enter valid email" class="border-2 block w-75 my-2 p-2">
+                </label>
+                <label for="passWord">Password:
+                    <input type="password" id="passWord" placeholder="Enter Password"
+                        class="border-2 block w-75 my-2 p-2">
+                </label>
+                <label for="confrimPw">Confirm Password:
+                    <input type="password" id="confrimPw" placeholder="Confirm Password"
+                        class="border-2 block w-75 my-2 p-2">
+                </label>
+                <button id="register" onclick="save()"
+                    class="border-2 border-green-400 w-75 bg-green-600 text-white font-bold rounded-lg my-2 p-2 hover:bg-green-400">Sign
+                    Up</button>
+            </section>
+        </form>
+    </main>
+    <script src="./form.js"></script>
+</body>
+
+</html>
