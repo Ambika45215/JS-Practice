@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Marks List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <main class="m-4">
+        <section>
+            <p class="text-2xl font-semibold mb-3 underline">Student Details:</p>
+            <form action="">
+                <label for="name" class="text-lg">Name:
+                    <input type="text" id="name" placeholder="Enter students name" class="border-2 w-64 mb-2 px-1">
+                </label><br>
+                <label for="subject" class="text-lg">Subject:
+                    <input type="text" id="subject" placeholder="Subject" class="border-2 w-64 mb-2 px-1">
+                </label><br>
+                <label for="marks" class="text-lg">Marks:
+                    <input type="number" id="marks" placeholder="Enter students marks(0-100)" class="border-2 w-64 mb-2 px-1">
+                </label><br>
+                <button class="border-2 p-2 rounded-full ml-20 mt-5 bg-white hover:bg-gray-300" onclick="onAdd()">Add Student</button>
+            </form>
+
+            <div class="m-2 text-lg"> 
+                <p class="m-2">Total Students: <span id="displayName"></span></p>
+                <p class="m-2">Average Score: <span id="displayAvg"></span></p>
+                <p class="m-2">Top Student: <span id="displayTop"></span></p>
+            </div>
+        </section>
+        <section>
+            <div class="text-2xl font-semibold m-2 underline">Student's List:</div>
+            <div id="studentList"></div>
+        </section>
+    </main>
+
+    <script src="./student.js"></script>
+</body>
+</html>
